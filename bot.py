@@ -245,7 +245,7 @@ async def botsatats(_, message):
 async def broadcast(_, message):
     if message.reply_to_message :
         await message.reply_text("Memulai Broadcast")
-        query = open("member.txt").readlines()
+        query = open("member.txt")
         for row in query:
            try: 
             chat_id = int(row[0])
