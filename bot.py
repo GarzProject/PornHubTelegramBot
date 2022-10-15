@@ -28,7 +28,7 @@ from pyrogram import filters
 
 
 
-SUDO = SUDO
+SUDO = int(SUDO)
 APP_ID = APP_ID
 APP_HASH = APP_HASH
 BOT_TOKEN = BOT_TOKEN
@@ -253,7 +253,7 @@ async def broadcast(_, message):
             await reply.copy(chat_id)
            except:
             pass
-            await message.reply_text(f"{chat_id} blocked me, Removed from DB.")
+            
 
 
 app.run()
