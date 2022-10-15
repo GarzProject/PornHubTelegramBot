@@ -10,6 +10,7 @@
 import asyncio
 import os
 import youtube_dl
+import sql
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
 from pyrogram import Client, filters
 from pornhub_api import PornhubApi
@@ -25,7 +26,11 @@ from youtube_dl.utils import DownloadError
 from config import *
 from helpers import download_progress_hook
 from pyrogram import filters
-from sql import *
+
+
+
+
+
 SUDO = SUDO
 APP_ID = APP_ID
 APP_HASH = APP_HASH
