@@ -1,0 +1,32 @@
+{
+    "name": "Pornhub Telegram Bot",
+    "description": "Bot telegram untuk mencari dan mengunduh video dari pornhub",
+    "keywords": ["pornhub", "python", "telegram"],
+    "env": {
+        "API_ID": {
+            "description": "Api id dari my.telegram.org",
+            "value": "xxxx", 
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Api hash dari my.telegram.org",
+            "value": "xxxxxxxxaaaaaaavvbccccxxx", 
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Token Bot dari @BotFather.",
+            "value": "98999999:xxxxxxx", 
+            "required": true
+        },
+        "SUDO":{
+            "description": "ID admin untuk bot",
+            "value": "660000009", 
+            "required": true
+        },
+         "MUST_JOIN":{
+            "description": "Username channel tanpa .env",
+            "value": "GarzProject", 
+            "required": true
+        }
+    }
+}
