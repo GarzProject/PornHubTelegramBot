@@ -238,7 +238,7 @@ async def botsatats(_, message):
     users = open("member.txt").readlines()
     user = open("member.txt").read()
     total = len(users)
-    await message.reply_text(f"Total Pengguna -  {total}")
+    await message.reply_text(f"Total : {total} Pengguna")
     await message.reply_text(f"{user}")
 
 # Fitur broadcastttt
