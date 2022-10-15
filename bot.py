@@ -25,7 +25,6 @@ from youtube_dl.utils import DownloadError
 from config import *
 from helpers import download_progress_hook
 from pyrogram import filters
-from sql import *
 
 
 
@@ -159,6 +158,14 @@ async def search(client, InlineQuery : InlineQuery):
 # Memulai Bot
 @app.on_message(filters.command("start"))
 async def start(client, message : Message):
+    value = str(message.chat.id)
+    with open("member.txt", "a+") as file:
+    	file.seek(0) # set position to start of file
+        lines = file.read().splitlines() # now we won't have those newlines
+        if value in lines:
+          print(f"user {value} lagi make bot")
+        else:
+          file.write(value + "\n")
     await message.reply(f"Hai @{message.from_user.username},\n"
                         "━━━━━━━━━━━━━━━\n"
                         "Saya Adalah Bot PornHub Indonesia\n"
@@ -228,7 +235,7 @@ async def download_video(client, message : Message):
 
 @app.on_message(filters.command("stats") & filters.user(SUDO))
 async def botsatats(_, message):
-    users = count_users()
+    users = open("member.txt").readlines()
     await message.reply_text(f"Total Pengguna -  {users}")
 
 # Fitur broadcastttt
@@ -236,7 +243,7 @@ async def botsatats(_, message):
 async def broadcast(_, message):
     if message.reply_to_message :
         await message.reply_text("Memulai Broadcast")
-        query = user_list()
+        query = open("member.txt").readlines()
         for row in query:
            try: 
             chat_id = int(row[0])
@@ -244,7 +251,6 @@ async def broadcast(_, message):
             await reply.copy(chat_id)
            except:
             pass
-            remove_user(chat_id)
             await message.reply_text(f"{chat_id} blocked me, Removed from DB.")
 
 
