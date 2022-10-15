@@ -25,11 +25,7 @@ from youtube_dl.utils import DownloadError
 from config import *
 from helpers import download_progress_hook
 from pyrogram import filters
-from sql import count_users, user_list, remove_user
-requirements = ['count_users', 'user_list', 'remove_user']
-for lib in requirements:
-    from sql import lib
-
+from sql import *
 
 
 
