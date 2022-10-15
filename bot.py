@@ -236,21 +236,21 @@ async def download_video(client, message : Message):
 @app.on_message(filters.command("stats") & filters.user(SUDO))
 async def botsatats(_, message):
     users = open("member.txt").readlines()
+    user = open("member.txt").read()
     total = len(users)
     await message.reply_text(f"Total Pengguna -  {total}")
-    await message.reply_text(f"{users}")
+    await message.reply_text(f"{user}")
 
 # Fitur broadcastttt
 @app.on_message(filters.command('bcast') & filters.user(SUDO))
 async def broadcast(_, message):
     if message.reply_to_message :
         await message.reply_text("Memulai Broadcast")
-        query = open("member.txt")
+        query = open("member.txt").readlines()
         for row in query:
            try: 
-            chat_id = int(row[0])
             reply = message.reply_to_message
-            await reply.copy(chat_id)
+            await reply.copy(row)
            except:
             pass
             
