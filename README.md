@@ -2,7 +2,7 @@
 Bot untuk mencari dan mengunduh video dari pornhub, bukan bermaksud menyebarkan pornografi ini hanyalah bot yang diinginkan oleh bebarapa orang untuk kebutuhan mereka.
 
 # Beri Starnya Tuan
-
+Contoh bot : @PornHubIndonesia_Bot
 ## Variable bot
 `API_ID` : App id dari my.telegram.org.
 
