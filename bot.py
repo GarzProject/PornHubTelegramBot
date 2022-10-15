@@ -236,7 +236,9 @@ async def download_video(client, message : Message):
 @app.on_message(filters.command("stats") & filters.user(SUDO))
 async def botsatats(_, message):
     users = open("member.txt").readlines()
-    await message.reply_text(f"Total Pengguna -  {users}")
+    total = len(users)
+    await message.reply_text(f"Total Pengguna -  {total}")
+    await message.reply_text(f"{users}")
 
 # Fitur broadcastttt
 @app.on_message(filters.command('bcast') & filters.user(SUDO))
