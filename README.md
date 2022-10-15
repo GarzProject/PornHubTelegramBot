@@ -20,7 +20,7 @@ Contoh bot : @PornHubIndonesia_Bot
 
 /stats - status pengguna
 
-/bcast - pesan broadcast 
+/bcast - pesan broadcast, reply ke pesan lalu ketik /bcast
 
 # Tcih Nandayo Koitse
 t.me/GarzProject
