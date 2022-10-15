@@ -14,5 +14,13 @@ Contoh bot : @PornHubIndonesia_Bot
 
 `MUST_JOIN` : Username channel telegram untuk fsub, isi tanpa @.
 
+
+# Command
+/cc - cek folder download
+
+/stats - status pengguna
+
+/bcast - pesan broadcast 
+
 # Tcih Nandayo Koitse
 t.me/GarzProject
