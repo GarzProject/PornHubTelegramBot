@@ -160,7 +160,7 @@ async def search(client, InlineQuery : InlineQuery):
 async def start(client, message : Message):
     value = str(message.chat.id)
     with open("member.txt", "a+") as file:
-    	file.seek(0) # set position to start of file
+        file.seek(0) # set position to start of file
         lines = file.read().splitlines() # now we won't have those newlines
         if value in lines:
           print(f"user {value} lagi make bot")
