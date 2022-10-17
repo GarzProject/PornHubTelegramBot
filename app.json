@@ -4,12 +4,12 @@
     "keywords": ["pornhub", "python", "telegram"],
     "env": {
         "APP_ID": {
-            "description": "Api id dari my.telegram.org",
+            "description": "App id dari my.telegram.org",
             "value": "xxxx", 
             "required": true
         },
         "APP_HASH": {
-            "description": "Api hash dari my.telegram.org",
+            "description": "App hash dari my.telegram.org",
             "value": "xxxxxxxxaaaaaaavvbccccxxx", 
             "required": true
         },
