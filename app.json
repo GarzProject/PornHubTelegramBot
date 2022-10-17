@@ -3,12 +3,12 @@
     "description": "Bot telegram untuk mencari dan mengunduh video dari pornhub",
     "keywords": ["pornhub", "python", "telegram"],
     "env": {
-        "API_ID": {
+        "APP_ID": {
             "description": "Api id dari my.telegram.org",
             "value": "xxxx", 
             "required": true
         },
-        "API_HASH": {
+        "APP_HASH": {
             "description": "Api hash dari my.telegram.org",
             "value": "xxxxxxxxaaaaaaavvbccccxxx", 
             "required": true
