@@ -1,6 +1,11 @@
-# variable
-APP_ID = "" # app id my.telegram.org
-APP_HASH = "" # app hash my.telegram.org
-BOT_TOKEN = "" # token bot dari @botfather
-SUDO = "" # id admin dari bot
-MUST_JOIN = "GarzProject" # username channel publik untuk fsub
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+APP_ID = os.getenv("APP_ID")
+APP_HASH = os.getenv("APP_HASH")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+SUDO = os.getenv("SUDO")
+MUST_JOIN = os.getenv("MUST_JOIN")
+
+
