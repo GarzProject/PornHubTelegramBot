@@ -24,7 +24,7 @@
             "required": true
         },
          "MUST_JOIN":{
-            "description": "Username channel tanpa .env",
+            "description": "Username channel tanpa @",
             "value": "GarzProject", 
             "required": true
         }
