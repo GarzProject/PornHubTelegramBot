@@ -5,27 +5,27 @@
     "env": {
         "APP_ID": {
             "description": "App id dari my.telegram.org",
-            "value": "xxxx", 
+            "value": "123456", 
             "required": true
         },
         "APP_HASH": {
             "description": "App hash dari my.telegram.org",
-            "value": "xxxxxxxxaaaaaaavvbccccxxx", 
+            "value": "abcdefghij", 
             "required": true
         },
         "BOT_TOKEN": {
             "description": "Token Bot dari @BotFather.",
-            "value": "98999999:xxxxxxx", 
+            "value": "12345:abcdefg", 
             "required": true
         },
         "SUDO":{
             "description": "ID admin untuk bot",
-            "value": "660000009", 
+            "value": "654321", 
             "required": true
         },
          "MUST_JOIN":{
             "description": "Username channel tanpa @",
-            "value": "GarzProject", 
+            "value": "contoh : GarzProject", 
             "required": true
         }
     }
