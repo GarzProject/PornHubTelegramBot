@@ -4,6 +4,8 @@ Bot untuk mencari dan mengunduh video dari pornhub, bukan bermaksud menyebarkan 
 # Beri Starnya Tuan
 Contoh bot : @PornHubIndonesia_Bot
 ## Variable bot
+edit file .env dan isi dengan data kalian, semua environment wajib diisi!!
+
 `APP_ID` : App id dari my.telegram.org.
 
 `APP_HASH` : App hash dari my.telegram.org
