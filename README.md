@@ -24,5 +24,8 @@ edit file .env dan isi dengan data kalian, semua environment wajib diisi!!
 
 /bcast - pesan broadcast, reply ke pesan lalu ketik /bcast
 
-# Tcih Nandayo Koitse
-t.me/GarzProject
+# Gas Deploy
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GarzProject/PornHubTelegramBot)
+
+[JOIN CHANNEL](https://t.me/GarzProject)
